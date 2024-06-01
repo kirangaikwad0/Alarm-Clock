@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.jpg" />
+
+    <!-- External style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Heading -->
+      <div class="title">Alarm Clock</div>
+
+      <!-- Current Time -->
+      <div class="real-time" id="real-time">
+        <div class="time" id="time"></div>
+      </div>
+
+      <!-- Get Date -->
+      <div class="date">
+        <div class="numDate" id="numDate"></div>
+      </div>
+
+      <!-- set for alarm -->
+      <div class="setAlarm">
+        <div class="column">
+          <select id="setHour">
+            <option value="setHour" selected hidden>Hour</option>
+          </select>
+        </div>
+
+        <div class="column">
+          <select id="setMinute">
+            <option value="setMinute" selected hidden>Minute</option>
+          </select>
+        </div>
+
+        <div class="column">
+          <select id="period">
+            <option value="AM/PM" selected hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- alarm stop button -->
+      <div class="stopButton">
+        <button id="stopAlarm" onclick="stopAlarm()">Stop Alarm</button>
+      </div>
+
+      <!-- alarm set button -->
+      <div class="alarm-btn">
+        <button id="btn-setAlarm" type="submit">Set Alarm</button>
+      </div>
+      <div class="alarmList" id="alarmList1"></div>
+    </div>
+
+    <!-- Javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

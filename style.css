@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+body {
+  background-color: #fff;
+}
+.container {
+  width: 450px;
+  height: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  /* border: 1px solid #000; */
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.real-time {
+  display: flex;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.period {
+  font-size: 1rem;
+}
+.date {
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.setAlarm {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.setAlarm select {
+  padding: 5px;
+  font-size: 1rem;
+  border: 2px solid #c9c6c6;
+  box-shadow: 2px 2px rgb(239, 242, 243);
+  border-radius: 3px;
+  margin: 10px 0px;
+}
+
+.alarm-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.alarm-btn button {
+  font-size: 1rem;
+  padding: 10px 70px;
+  background-color: blueviolet;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.alarm-btn button:hover {
+  color: #e6e1e1;
+}
+
+.stopButton {
+  text-align: center;
+  padding: 5px;
+  visibility: hidden;
+}
+
+.stopButton button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgb(239, 242, 243);
+  background-color: blueviolet;
+  color: #fff;
+}
+.alarmList {
+  color: #000;
+  margin: 14px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.alarmLog {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 10px;
+  color: black;
+}
