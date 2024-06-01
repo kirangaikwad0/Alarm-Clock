@@ -125,5 +125,5 @@ function deleteAlarm(click_id) {
   );
   alarmListArr.splice(deleteIndex, 1);
   element.remove();
-  alert(`Your Alarm ${click_id} Delete.`);
+  alert(`Your deleting alarm.`);
 }
